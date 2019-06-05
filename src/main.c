@@ -2307,7 +2307,7 @@ void on_char(GLFWwindow *window, unsigned int u) {
     }
 }
 
-void on_scroll(GLFWwindow *window, double xdelta, double ydelta) {
+void on_scroll(double ydelta) {
     static double ypos = 0;
     ypos += ydelta;
     if (ypos < -SCROLL_THRESHOLD) {
