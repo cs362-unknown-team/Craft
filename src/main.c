@@ -2461,6 +2461,7 @@ float handle_gravity(float dy, float ut) {
 		dy -= ut * 25;
 		dy = MAX(dy, -250);
 	}
+	return dy;
 }
 
 void handle_player_under_world(State *s) {
